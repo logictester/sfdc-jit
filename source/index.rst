@@ -194,4 +194,23 @@ In the STA Console, modify the Salesforce application by following these steps:
 
 5. Save the updated Salesforce application
 
-SafeNet Trusted Access is ready for Salesforce Just-in-Time (JIT) User Provisioning 
+SafeNet Trusted Access is ready for Salesforce Just-in-Time (JIT) User Provisioning
+
+
+Testing the solution
+====================
+
+Login to Salesforce using your direct URL or using the published application in SafeNet Trusted Access User Portal, with an account that does not yet exist in Salesforce. After succesful authentication, the user's account is automatically created and the user is logged in.
+Verify the user account creation in Salesforce Console - :guilabel:`Users`
+
+Before provisioning:
+
+.. thumbnail:: _images/users_before.png
+
+User Login:
+
+.. image:: _images/sfdc_login.gif
+
+After provisioning:
+
+.. thumbnail:: _images/users_after.png
