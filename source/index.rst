@@ -66,16 +66,19 @@ In order to enable Just in Time (JIT) Provisioning in Salesforce, we have to mod
 
 In Salesforce Console, modify the policy by following these steps:
 
-#. Login to Salesforce as a **System Administrator**
-#. Navigate to :guilabel:`Identity` and click :guilabel:`Single Sign-On Settings`
+1. Login to Salesforce as a **System Administrator**
+2. Navigate to :guilabel:`Identity` and click :guilabel:`Single Sign-On Settings`
 
-.. thumbnail:: _images/sso_settings.png 
+.. thumbnail:: _images/sso_settings.png
 
-#. Click :guilabel:`Edit` to edit your existing SAML Configuration
-#. Change :guilabel:`SAML Identity Type` to :guilabel:`Assertion contains the Federation ID from the User object`
-#. Under **Just-in-time User Provisioning**, enable :guilabel:`User Provisioning Enabled`
-#. Make sure **Standard** is selected
-#. Click :guilabel:`Save` to save the configuration
+3. Click :guilabel:`Edit` to edit your existing SAML Configuration
+
+.. thumbnail:: _images/ss_id.png 
+
+4. Change :guilabel:`SAML Identity Type` to :guilabel:`Assertion contains the Federation ID from the User object`
+5. Under **Just-in-time User Provisioning**, enable :guilabel:`User Provisioning Enabled`
+6. Make sure **Standard** is selected
+7. Click :guilabel:`Save` to save the configuration
 
 .. note::
 
