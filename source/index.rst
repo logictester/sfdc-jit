@@ -87,6 +87,13 @@ In Salesforce Console, modify the policy by following these steps:
 
    For greater control over the provisioning process, Salesforce supports Custom SAML JIT with Apex handler, more information can be found `here <https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_Auth_SamlJitHandler.htm>`_
 
+.. warning::
+
+   Once the federation **SAML Identity Type** is changed, users without **Federation ID** will fail to authenticate using SafeNet Trusted Access. To overcome this, open the user's account object under **Users** and set the **Federation ID** in **Single Sign On Information** to the user's email address
+
+   .. thumbnail:: _images/fed_id.png
+
+
 Salesforce is ready for Just in Time (JIT) Provisioning.
 
 
