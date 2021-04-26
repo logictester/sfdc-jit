@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=========================================================================
-Protecting Enterprise Remote Desktop Services with SafeNet Trusted Access
-=========================================================================
+======================================================================
+Salesforce Just in Time (JIT) Provisioning with SafeNet Trusted Access
+======================================================================
 
 .. toctree::
    :maxdepth: 3
@@ -17,41 +17,28 @@ Protecting Enterprise Remote Desktop Services with SafeNet Trusted Access
 Overview
 ========
 
-This guide primarily documents the procedure for protecting Remote Desktop Services (RDS) through native enforcement in the Remote Desktop Gateway (RDGW) extending Network Policy Server (NPS) RADIUS to SafeNet Trusted Access (STA) and authenticating the requesting user with Push Authentication to MobilePASS+.
-Secondarily, this guide also documents an alternative architecture where instead of RADIUS, a SafeNet agent is deployed co-located with NPS to facilitate agent-based authentication with SafeNet Trusted Access over encrypted tunnel (TLS 1.2 over 443). Related to this, a proposed High Availability (HA) architecture is documented as well.
-Lastly, the guide briefly expands on troubleshooting tools and procedures related to deployment.
+This guide documents the procedure to enable Just in Time (JIT) Provisioning of users from SafeNet Trusted Access to Salesforce. This procedure allows automatic user account creation in Salesforce after successful, SAML based, authentication using SafeNet Trusted Access
 
 .. note::
 
-   This guide documents alternative deployment architectures. These do not replace SafeNet official deployment architectures using RDWeb and RDGW agents (see Support Portal of downloads and documentation of said agents).
+   This guide assumes Salesforce is federated to SafeNet Trusted Access using SAML, the integration can be found `here <https://resources.safenetid.com/help/Salesforce/Salesforce/Index.htm>`_
 
 
 Prerequisites
 =============
 
-  - RDGW is configured and published with valid public certificates
-  - RDGW Resource Authorization Policy (RD RAP) is configured to allow access to required resources
-  - NPS role is installed for RDGW Connection Authorization Policy (RD CAP)
-  - Auth Node for the RDGW server is configured in STA
-  - A user with a MobilePASS+ authenticator is enrolled
+  - Salesforce is configured using My Domain configuration
+  - Salesforce is federated to SafeNet Trusted Access using SAML (Single Sign-On)
+  - A user with a SafeNet Trusted Access authenticator is enrolled
+  - Users can authenticate using SafeNet Trusted Access
 
 
-Solution Architecture
-=====================
+Solution Overview
+=================
 
-The high level target architecture is shown below. The user requests a remote desktop service and inputs their username and domain password. The access-request is intercepted by RDGW policy and forwarded to SafeNet Trusted Access (STA) over RADIUS (UDP 1812) via Microsoft NPS. STA then sends an OTP Push notification to the requesting user’s mobile device. The user approves the push request and is authorized to the remote desktop service.
-
-.. _architecture:
-
-.. thumbnail:: _images/architecture.png
-   :title: Figure: Architecture diagram.
-   :show_caption: true
-
-|
-
-.. note::
-
-   Please see :ref:`Appendix A <appendix-a>` for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
+With Just-in-Time (JIT) provisioning, SafeNet Trusted Access passes user information to your Salesforce org in a SAML assertion to automatically create user accounts.
+SafeNet Trusted Access sends user information to your org in an :guilabel:`Attributes` statement in the SAML assertion.
+When a user logs in to an org with standard JIT provisioning enabled, Salesforce pulls user data from the identity provider and stores it in a new :guilabel:`User` object.
 
 
 
