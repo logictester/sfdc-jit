@@ -66,10 +66,10 @@ In order to enable Just in Time (JIT) Provisioning in Salesforce, we have to mod
 
 In Salesforce Console, modify the policy by following these steps:
 
-1. Login to Salesforce as a **System Administrator**
-2. Navigate to :guilabel:`Identity` > :guilabel:`Single Sign-On Settings`
-3. Click :guilabel:`Edit` to edit your existing SAML Configuration
-4. 
+#. Login to Salesforce as a **System Administrator**
+#. Navigate to :guilabel:`Identity` and click :guilabel:`Single Sign-On Settings`
+#. Click :guilabel:`Edit` to edit your existing SAML Configuration
+#. Change
 
 SafeNet Trusted Access configuration
 ====================================
