@@ -97,19 +97,25 @@ In Salesforce Console, modify the policy by following these steps:
 Salesforce is ready for Just-in-Time (JIT) User Provisioning.
 
 
-Identify the **Profile** to be configured for provisionin
-*********************************************************
+Identify the **Profile** to be configured for provisioning
+**********************************************************
 
-To set the provisioning of users to the correct Salesforce Profile we need to identify the Profile ID in Salesforce. The easiest way to achive this is by opening the desired profile and copying the Profile ID from the URL
+To set the provisioning of users to the correct Salesforce Profile we need to identify the Profile ID in Salesforce. The easiest way to achieve this is by opening the desired profile and copying the Profile ID from the URL
 
 In Salesforce Console, open and identify the Profile by following these steps:
 
 1. Login to Salesforce as a **System Administrator**
 2. Navigate to :guilabel:`Users` and click on :guilabel:`Profiles`
 3. Find the Profile you would like to be used for Provisioning (for example: **Standard User**)
+
+.. thumbnail:: _images/profile.png
+
 4. Click on the Profile Name
 5. In the browser address bar, look at the end of the URL, the Profile ID is the value following **address=%2F**, starting with **00**
-6. Copy the value and save for later use in SafeNet Trusted Access Configuration 
+
+.. thumbnail:: _images/profile_id.png 
+
+6. Copy the value and save it for later use in SafeNet Trusted Access Configuration
 
 
 SafeNet Trusted Access configuration
