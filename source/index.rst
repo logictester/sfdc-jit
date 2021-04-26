@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-======================================================================
-Salesforce Just in Time (JIT) Provisioning with SafeNet Trusted Access
-======================================================================
+===========================================================================
+Salesforce Just-in-Time (JIT) User Provisioning with SafeNet Trusted Access
+===========================================================================
 
 .. toctree::
    :maxdepth: 3
@@ -17,7 +17,7 @@ Salesforce Just in Time (JIT) Provisioning with SafeNet Trusted Access
 Overview
 ========
 
-This guide documents the procedure to enable Just in Time (JIT) Provisioning of users from SafeNet Trusted Access to Salesforce. This procedure allows automatic user account creation in Salesforce after successful, SAML based, authentication using SafeNet Trusted Access
+This guide documents the procedure to enable Just-in-Time (JIT) Provisioning of users from SafeNet Trusted Access to Salesforce. This procedure allows automatic user account creation in Salesforce after successful, SAML based, authentication using SafeNet Trusted Access
 
 .. note::
 
@@ -49,7 +49,7 @@ The configuration requires the following steps:
   **In Salesforce**
 
   - Modify the configured **Single Sign-on** policy to enable **Provisioning**
-  - Identify the correct **Profile** to be configured for provisioning
+  - Identify the **Profile** to be configured for provisioning
 
   **In SafeNet Trusted Access**
 
@@ -67,7 +67,7 @@ In order to enable Just in Time (JIT) Provisioning in Salesforce, we have to mod
 In Salesforce Console, modify the policy by following these steps:
 
 1. Login to Salesforce as a **System Administrator**
-2. Navigate to :guilabel:`Identity` and click :guilabel:`Single Sign-On Settings`
+2. Navigate to :guilabel:`Identity` and click on :guilabel:`Single Sign-On Settings`
 3. Click :guilabel:`Edit` to edit your existing SAML Configuration
 
 .. thumbnail:: _images/sso_settings.png
@@ -85,7 +85,7 @@ In Salesforce Console, modify the policy by following these steps:
 
 .. note::
 
-   For greater control over the provisioning process, Salesforce supports Custom SAML JIT with Apex handler, more information can be found `here <https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_Auth_SamlJitHandler.htm>`_
+   For greater control over the provisioning process, Salesforce supports **Custom SAML JIT with Apex handler**, more information can be found `here <https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_Auth_SamlJitHandler.htm>`_
 
 .. warning::
 
@@ -94,7 +94,22 @@ In Salesforce Console, modify the policy by following these steps:
    .. thumbnail:: _images/fed_id.png
 
 
-Salesforce is ready for Just in Time (JIT) Provisioning.
+Salesforce is ready for Just-in-Time (JIT) User Provisioning.
+
+
+Identify the **Profile** to be configured for provisionin
+*********************************************************
+
+To set the provisioning of users to the correct Salesforce Profile we need to identify the Profile ID in Salesforce. The easiest way to achive this is by opening the desired profile and copying the Profile ID from the URL
+
+In Salesforce Console, open and identify the Profile by following these steps:
+
+1. Login to Salesforce as a **System Administrator**
+2. Navigate to :guilabel:`Users` and click on :guilabel:`Profiles`
+3. Find the Profile you would like to be used for Provisioning (for example: **Standard User**)
+4. Click on the Profile Name
+5. In the browser address bar, look at the end of the URL, the Profile ID is the value following **address=%2F**, starting with **00**
+6. Copy the value and save for later use in SafeNet Trusted Access Configuration 
 
 
 SafeNet Trusted Access configuration
