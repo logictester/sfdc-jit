@@ -190,4 +190,8 @@ In the STA Console, modify the Salesforce application by following these steps:
 
 *Example*:
 
-.. thumbnail:: _images/attributes.png 
+.. thumbnail:: _images/attributes.png
+
+5. Save the updated Salesforce application
+
+SafeNet Trusted Access is ready for Salesforce Just-in-Time (JIT) User Provisioning 
