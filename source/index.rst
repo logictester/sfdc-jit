@@ -69,7 +69,15 @@ In Salesforce Console, modify the policy by following these steps:
 #. Login to Salesforce as a **System Administrator**
 #. Navigate to :guilabel:`Identity` and click :guilabel:`Single Sign-On Settings`
 #. Click :guilabel:`Edit` to edit your existing SAML Configuration
-#. Change
+#. Change :guilabel:`SAML Identity Type` to :guilabel:`Assertion contains the Federation ID from the User object`
+#. Under **Just-in-time User Provisioning**, enable :guilabel:`User Provisioning Enabled`
+#. Make sure **Standard** is selected
+#. Click :guilabel:`Save` to save the configuration
+
+.. note::
+
+   For greater control over the provisioning process, Salesforce supports Custom SAML JIT with Apex handler, more information can be found `here <https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_Auth_SamlJitHandler.htm>`_
+
 
 SafeNet Trusted Access configuration
 ====================================
