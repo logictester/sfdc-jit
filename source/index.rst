@@ -41,7 +41,67 @@ SafeNet Trusted Access sends user information to your org in an :guilabel:`Attri
 When a user logs in to an org with standard JIT provisioning enabled, Salesforce pulls user data from the identity provider and stores it in a new :guilabel:`User` object.
 
 
+Configuration Steps
+===================
+
+The configuration requires the following steps:
+
+  **In Salesforce**
+
+  - Modify the configured **Single Sign-on** policy to enable **Provisioning**
+  - Identify the correct **Profile** to be configured for provisioning
+
+  **In SafeNet Trusted Access**
+
+  - Modify **Salesforce** application in STA to add **SAML Return Attributes**
 
 
-Step 1: Configure STA Auth Node for RDGW
-========================================
+Salesforce Configuration
+========================
+
+Modify the configured **Single Sign-on** policy to enable **Provisioning**
+**************************************************************************
+
+In order to enable Just in Time (JIT) Provisioning in Salesforce, we have to modify the existing **Single Sign-on** policy
+
+In Salesforce Console, modify the policy by following these steps:
+
+1. Login to Salesforce as a **System Administrator**
+2. Navigate to :guilabel:`Identity` > :guilabel:`Single Sign-On Settings`
+3. Click :guilabel:`Edit` to edit your existing SAML Configuration
+4. 
+
+SafeNet Trusted Access configuration
+====================================
+
+  .. note:: Open SafeNet Trusted Access Console (you can use the following direct links based on your availability zone, opens in a new tab)
+
+            |US Zone|
+
+             .. |US Zone| raw:: html
+
+                <a href="https://sta.us.safenetid.com" target="_blank">US Zone SafeNet Trusted Access Console</a>
+
+            |EU Zone|
+
+            .. |EU Zone| raw:: html
+
+               <a href="https://sta.eu.safenetid.com" target="_blank">EU Zone SafeNet Trusted Access Console</a>
+
+            |Classic Zone|
+
+            .. |Classic Zone| raw:: html
+
+               <a href="https://sta.safenetid.com" target="_blank">Classic Zone SafeNet Trusted Access Console</a>
+
+
+Modify SafeNet Trusted Access - Salesforce application
+******************************************************
+
+In order to be able to provide the needed information for user creation in Salesforce, SafeNet Trusted Access - Salesforce application we've created to establish SAML based authentication, has to be modified by adding SAML Return Attribues.
+
+In the STA Console, modify the Salesforce application by following these steps:
+
+1. Go to the :guilabel:`Applications` tab
+2. Click :guilabel:`Salesforce` Application
+3. Under **Return Attribues**
