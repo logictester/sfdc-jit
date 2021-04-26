@@ -187,3 +187,7 @@ In the STA Console, modify the Salesforce application by following these steps:
 |   User.ProfileId            | Single Custom Value...       |                                             |
 |                             |                              | (saved in :ref:`this <profile_id>` section) |
 +-----------------------------+------------------------------+---------------------------------------------+
+
+*Example*:
+
+.. thumbnail:: _images/attributes.png 
