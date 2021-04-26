@@ -154,35 +154,33 @@ In the STA Console, modify the Salesforce application by following these steps:
 3. Under **Return Attribues**, click on :guilabel:`Add Attribue`
 4. Add the following Attributes and Mappings:
 
-.. note::
+.. note:: Return Attribues are key sensative (use :guilabel:`copy` to copy the values)
 
-   Return Attribues are key sensative (use :guilabel:`copy` to copy the values)
-
-   +---------------------------+--------------------------+-------------------------+
-   | Return Attribute          | User Attribute (Mapping) | Custom Value            |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          |                         |
-   | User.Username             | Email address            |                         |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          |                         |
-   | User.LastName             | Last Name                |                         |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          |                         |
-   | User.Email                | Email address            |                         |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          |                         |
-   | User.FederationIdentifier | Email address            |                         |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          |                         |
-   | User.Alias                | SAS User ID              |                         |
-   +---------------------------+--------------------------+-------------------------+
-   | .. code::                 |                          |                         |
-   |                           |                          | Salesforce Profile ID   |
-   | User.ProfileId            | Single Custom Value...   |                         |
-   |                           |                          | (saved in this section) |
-   +---------------------------+--------------------------+-------------------------+
++---------------------------+--------------------------+-------------------------+
+| Return Attribute          | User Attribute (Mapping) | Custom Value            |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          |                         |
+| User.Username             | Email address            |                         |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          |                         |
+| User.LastName             | Last Name                |                         |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          |                         |
+| User.Email                | Email address            |                         |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          |                         |
+| User.FederationIdentifier | Email address            |                         |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          |                         |
+| User.Alias                | SAS User ID              |                         |
++---------------------------+--------------------------+-------------------------+
+| .. code::                 |                          |                         |
+|                           |                          | Salesforce Profile ID   |
+| User.ProfileId            | Single Custom Value...   |                         |
+|                           |                          | (saved in this section) |
++---------------------------+--------------------------+-------------------------+
