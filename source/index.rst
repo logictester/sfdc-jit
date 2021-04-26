@@ -78,6 +78,8 @@ In Salesforce Console, modify the policy by following these steps:
 
    For greater control over the provisioning process, Salesforce supports Custom SAML JIT with Apex handler, more information can be found `here <https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_interface_Auth_SamlJitHandler.htm>`_
 
+Salesforce is ready for Just in Time (JIT) Provisioning.
+
 
 SafeNet Trusted Access configuration
 ====================================
