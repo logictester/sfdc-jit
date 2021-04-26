@@ -214,3 +214,21 @@ User Login:
 After provisioning:
 
 .. thumbnail:: _images/users_after.png
+
+
+Troubleshooting
+===============
+
+Salesforce provides error messages in the URL after a failed login. You can check the end of the URL for the error message or use SAML Tracer to see the error as a clear text for easier parsing.
+
+Browser - SAML Login Error:
+
+.. thumbnail:: _images/sfdc_error_screen.png
+
+Browser - URL Error Details:
+
+.. thumbnail:: _images/sfdc_error_url.png
+
+SAML Tracer - Error Details:
+
+.. thumbnail:: _images/sfdc_error_tracer.png
