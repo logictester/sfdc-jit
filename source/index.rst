@@ -113,9 +113,9 @@ In Salesforce Console, open and identify the Profile by following these steps:
 4. Click on the Profile Name (for example: **Standard User**)
 5. In the browser address bar, look at the end of the URL, the Profile ID is the value following **address=%2F**, starting with **00**
 
-.. thumbnail:: _images/profile_id.png
-
 .. _profile_id:
+
+.. thumbnail:: _images/profile_id.png
 
 6. Copy the value and save it for later use in SafeNet Trusted Access Configuration
 
