@@ -73,7 +73,7 @@ In Salesforce Console, modify the policy by following these steps:
 
 3. Click :guilabel:`Edit` to edit your existing SAML Configuration
 
-.. thumbnail:: _images/ss_id.png 
+.. thumbnail:: _images/sso_id.png
 
 4. Change :guilabel:`SAML Identity Type` to :guilabel:`Assertion contains the Federation ID from the User object`
 5. Under **Just-in-time User Provisioning**, enable :guilabel:`User Provisioning Enabled`
