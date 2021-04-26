@@ -110,10 +110,10 @@ In Salesforce Console, open and identify the Profile by following these steps:
 
 .. thumbnail:: _images/profile.png
 
-4. Click on the Profile Name
+4. Click on the Profile Name (for example: **Standard User**)
 5. In the browser address bar, look at the end of the URL, the Profile ID is the value following **address=%2F**, starting with **00**
 
-.. thumbnail:: _images/profile_id.png 
+.. thumbnail:: _images/profile_id.png
 
 6. Copy the value and save it for later use in SafeNet Trusted Access Configuration
 
@@ -121,25 +121,25 @@ In Salesforce Console, open and identify the Profile by following these steps:
 SafeNet Trusted Access configuration
 ====================================
 
-  .. note:: Open SafeNet Trusted Access Console (you can use the following direct links based on your availability zone, opens in a new tab)
+.. note:: Open SafeNet Trusted Access Console (you can use the following direct links based on your availability zone, opens in a new tab)
 
-            |US Zone|
+          |US Zone|
 
-             .. |US Zone| raw:: html
+            .. |US Zone| raw:: html
 
-                <a href="https://sta.us.safenetid.com" target="_blank">US Zone SafeNet Trusted Access Console</a>
+              <a href="https://sta.us.safenetid.com" target="_blank">US Zone SafeNet Trusted Access Console</a>
 
-            |EU Zone|
+          |EU Zone|
 
             .. |EU Zone| raw:: html
 
-               <a href="https://sta.eu.safenetid.com" target="_blank">EU Zone SafeNet Trusted Access Console</a>
+              <a href="https://sta.eu.safenetid.com" target="_blank">EU Zone SafeNet Trusted Access Console</a>
 
-            |Classic Zone|
+          |Classic Zone|
 
             .. |Classic Zone| raw:: html
 
-               <a href="https://sta.safenetid.com" target="_blank">Classic Zone SafeNet Trusted Access Console</a>
+              <a href="https://sta.safenetid.com" target="_blank">Classic Zone SafeNet Trusted Access Console</a>
 
 
 Modify SafeNet Trusted Access - Salesforce application
